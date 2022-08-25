@@ -3,6 +3,7 @@ import { ReactComponent as ReactLogo } from "./react-brands.svg";
 import{ReactComponent as Csslogo} from "./css3-brands.svg";
 import{ReactComponent as HtmlLogo} from "./html5-brands.svg";
 import{ReactComponent as Javascript} from "./square-js-brands.svg";
+import{ReactComponent as Github} from "./github-brands.svg";
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
   }
 
   const url = 'https://www.linkedin.com/in/nicolas-cozzo-saravia-3a1074129/'
+
+  const url2 = 'https://github.com/Nicozzo'
 
 
   return (
@@ -73,6 +76,11 @@ function App() {
         <div className="w-12"><HtmlLogo className="fill-blue-500"/></div>
         <div className="w-12"><Csslogo className="fill-blue-500"/></div>
         <div className="w-12"><Javascript className="fill-blue-500"/></div>
+        <div>
+          <h1 className="text-1xl uppercase font-bold text-gray-50"> Visit my github!</h1>
+          <div onClick={() => window.open(url2, '_blank') }
+          className="w-12"><Github className="fill-blue-500" /></div>
+        </div>
     </div>
     </div> 
   </div>
